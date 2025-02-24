@@ -13,7 +13,7 @@
   "author": "Dario Javier Ramírez /Legal-IT-Ø",
   "license": "ISC",
   "type": "commonjs",
-    "dependencies": {
+  "dependencies": {
     "@google/generative-ai": "^0.22.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
