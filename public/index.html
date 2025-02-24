@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador Legal con IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analizador Legal con IA</h1>
+
+        <div class="botones-principales">
+            <button id="btnAnalizarHechos">Analizar Hechos</button>
+            <button id="btnGenerarApercibimiento">Generar Apercibimiento</button>
+        </div>
+
+        <!-- Sección Analizar Hechos (Inicialmente Oculta) -->
+        <div id="seccionAnalizarHechos" class="seccion-principal" style="display: none;">
+            <h2>Analizar Hechos</h2>
+            <textarea id="textoHechos" rows="10" placeholder="Ingrese los hechos aquí..."></textarea>
+            <button id="procesarHechos">Procesar Hechos</button>
+            <!-- Botón de Guardar (Hechos) -->
+            <button id="guardarHechos">Guardar</button>
+            <div id="resultadoHechos" class="resultado"></div>
+              <!-- Indicador de carga -->
+            <div id="indicadorCargaHechos" style="display: none;">
+                <img src="assets/loading.gif" alt="Cargando...">  <!-- Reemplaza 'loading.gif' con tu imagen -->
+            </div>
+        </div>
+
+        <!-- Sección Generar Apercibimiento (Inicialmente Oculta) -->
+        <div id="seccionGenerarApercibimiento" class="seccion-principal" style="display: none;">
+            <h2>Generar Apercibimiento</h2>
+            <textarea id="hechosApercibimiento" rows="6" placeholder="Ingrese los hechos aquí..."></textarea>
+
+            <h3>Sanciones Previas</h3>
+            <div id="sancionesPrevias">
+                <!-- Aquí se agregarán los campos para las sanciones dinámicamente -->
+            </div>
+            <button id="agregarSancion">Agregar Sanción</button>
+
+            <button id="procesarApercibimiento">Generar Apercibimiento</button>
+            <!-- Botón de Guardar (Apercibimiento)-->
+            <button id="guardarApercibimiento">Guardar</button>
+            <div id="resultadoApercibimiento" class="resultado"></div>
+            <!-- Indicador de carga -->
+            <div id="indicadorCargaApercibimiento" style="display: none;">
+                <img src="assets/loading.gif" alt="Cargando...">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.5.0/docx.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
